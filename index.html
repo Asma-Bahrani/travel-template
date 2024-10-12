@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>TravelTour</title>
+  </head>
+  <body>
+    <!-- #################### header #################### -->
+    <header>
+      <!-- header-top -->
+      <div class="header-top">
+        <div class="contact-info">
+          <div class="social-media">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="pipe"><span>|</span></div>
+          <div class="email">example@gmail.com</div>
+        </div>
+        <div class="language">EN <span>|</span>Per</div>
+      </div>
+      <!-- header-bottom -->
+      <div class="header-bottom">
+        <div class="menu-container">
+          <div class="hamburger-menu">
+            <a href="#" onclick="menubutton()"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </div>
+          <div class="logo">
+            <h1>Travel<span>Tour</span></h1>
+          </div>
+        </div>
+        <!-- menu -->
+        <nav>
+          <ul class="menu">
+            <li><a class="active" href="#">صفحه اصلی</a></li>
+            <li><a href="#about-us">درباره ما</a></li>
+            <li><a href="#packages">بسته ها</a></li>
+            <li><a href="#destination">مقاصد</a></li>
+            <li><a href="#blog">بلاگ</a></li>
+            <li><a href="#contact-us">تماس با ما</a></li>
+          </ul>
+        </nav>
+        <div class="login-register">
+          <a href="#"><i class="fa-solid fa-user"></i>ورود</a>
+          <div class="pipe"><span>|</span></div>
+          <a href="#">ثبت نام</a>
+        </div>
+
+        <!-- sidebare -->
+        <ul class="sidebare">
+          <li class="login-register-sidebare">
+            <a href="#">ورود<span>|</span>ثبت نام</a>
+          </li>
+          <hr />
+          <li><a class="active" href="#">صفحه اصلی</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">بسته ها</a></li>
+          <li><a href="#">مقاصد</a></li>
+          <li><a href="#">بلاگ</a></li>
+          <li><a href="#">تماس با ما</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- #################### end of header #################### -->
+    <!-- #################### slider #################### -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/slider/slide_1.jpg" alt="slide-1" />
+          <div class="slide-text">
+            <div class="heading">
+              <h3>تورها و سفرها</h3>
+              <h2>با ما کل جهان را کشف کنید</h2>
+            </div>
+            <a href="#" class="btn">اکنون رزرو کنید</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slider/slide_2.jpg" alt="slide-2" />
+          <div class="slide-text">
+            <div class="heading">
+              <h3>تورها و سفرها</h3>
+              <h2>با ما کل جهان را کشف کنید</h2>
+            </div>
+            <a href="#" class="btn">اکنون رزرو کنید</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slider/slide_3.jpg" alt="slide-3" />
+          <div class="slide-text">
+            <div class="heading">
+              <h3>تورها و سفرها</h3>
+              <h2>با ما کل جهان را کشف کنید</h2>
+            </div>
+            <a href="#" class="btn">اکنون رزرو کنید</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slider/slide_4.jpg" alt="slide-4" />
+          <div class="slide-text">
+            <div class="heading">
+              <h3>تورها و سفرها</h3>
+              <h2>با ما کل جهان را کشف کنید</h2>
+            </div>
+            <a href="#" class="btn">اکنون رزرو کنید</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- #################### end of slider #################### -->
+    <!-- #################### booking #################### -->
+    <section>
+      <div class="booking-container">
+        <form action="" class="booking-form">
+          <input type="text" placeholder="مبدا" />
+          <input type="text" placeholder="مقصد" />
+          <input type="text" placeholder="تاریخ رفت" />
+          <input type="text" placeholder="تاریخ برگشت" />
+          <button class="btn">جستجو</button>
+        </form>
+      </div>
+    </section>
+    <!-- #################### end of booking #################### -->
+    <!-- #################### about-us #################### -->
+    <section class="about-container" id="about-us">
+      <div class="about-image">
+        <img src="assets/images/about-us/about-1.jpg" alt="" />
+      </div>
+      <div class="about-text">
+        <div class="content">
+          <h3>درباره ما</h3>
+          <h2>به سایت Travel<span>Tour</span> خوش آمدید</h2>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+          </p>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+          </p>
+          <a href="#">بیشتر بخوانید</a>
+        </div>
+      </div>
+    </section>
+    <!-- #################### end of about-us #################### -->
+    <!-- #################### packages #################### -->
+
+    <section id="packages">
+      <div class="package-heading">
+        <h3>بسته ها</h3>
+        <h2>بسته های شگفت انگیز</h2>
+      </div>
+      <div class="package-container">
+        <div class="package-content">
+          <article class="package-article art-1">
+            <div class="package-img">
+              <img src="assets/images/packages/pack1.jpg" alt="" />
+            </div>
+            <div class="package-info">
+              <div class="location">
+                <i class="fa-solid fa-location-dot location-line"></i>تایلند
+              </div>
+              <div class="calendar">
+                <i class="fa-solid fa-calendar-days day-line"></i>3 روز
+              </div>
+              <div class="user"><i class="fa-solid fa-user"></i>2 نفر</div>
+            </div>
+            <div class="package-money">
+              <h3>140000000 تومان</h3>
+            </div>
+            <div class="package-counter">
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+            </div>
+            <p class="package-desc">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است
+            </p>
+            <div class="package-btn">
+              <a class="more" href="#">بیشتر</a>
+              <a class="reserve" href="#">رزرو</a>
+            </div>
+          </article>
+        </div>
+        <div class="package-content">
+          <article class="package-article art-2">
+            <div class="package-img">
+              <img src="assets/images/packages/pack2.jpg" alt="" />
+            </div>
+            <div class="package-info">
+              <div class="location">
+                <i class="fa-solid fa-location-dot location-line"></i>تایلند
+              </div>
+              <div class="calendar">
+                <i class="fa-solid fa-calendar-days day-line"></i>3 روز
+              </div>
+              <div class="user"><i class="fa-solid fa-user"></i>2 نفر</div>
+            </div>
+            <div class="package-money">
+              <h3>140000000 تومان</h3>
+            </div>
+            <div class="package-counter">
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+            </div>
+            <p class="package-desc">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است
+            </p>
+            <div class="package-btn">
+              <a class="more" href="#">بیشتر</a>
+              <a class="reserve" href="#">رزرو</a>
+            </div>
+          </article>
+        </div>
+        <div class="package-content">
+          <article class="package-article art-3">
+            <div class="package-img">
+              <img src="assets/images/packages/pack3.jpg" alt="" />
+            </div>
+            <div class="package-info">
+              <div class="location">
+                <i class="fa-solid fa-location-dot location-line"></i>تایلند
+              </div>
+              <div class="calendar">
+                <i class="fa-solid fa-calendar-days day-line"></i>3 روز
+              </div>
+              <div class="user"><i class="fa-solid fa-user"></i>2 نفر</div>
+            </div>
+            <div class="package-money">
+              <h3>140000000 تومان</h3>
+            </div>
+            <div class="package-counter">
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+              <small><i class="fa-solid fa-star"></i></small>
+            </div>
+            <p class="package-desc">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است
+            </p>
+            <div class="package-btn">
+              <a class="more" href="#">بیشتر</a>
+              <a class="reserve" href="#">رزرو</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- #################### end of packages #################### -->
+
+    <!-- #################### destination #################### -->
+
+    <section id="destination">
+      <div class="destination-heading">
+        <h3>مقاصد</h3>
+        <h2>مقاصد معروف</h2>
+      </div>
+      <div class="destination-container">
+        <div class="choose-wrapper">
+          <div class="lg-img img-1">
+            <img src="assets/images/destitation/destination-4.jpg" alt="" />
+
+            <div class="img-content">
+              <h2>تور استرالیا</h2>
+              <div class="hidden-content">
+                <span> <i class="fa-solid fa-clock"></i>10 روز</span>
+                <span> <i class="fa-solid fa-user"></i>12+</span>
+                <span><i class="fa-solid fa-location-dot"></i>استرالیا</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg-img img-2">
+            <img src="assets/images/destitation/destination-2.jpg" alt="" />
+
+            <div class="img-content">
+              <h2>تور مالدیو</h2>
+              <div class="hidden-content">
+                <span> <i class="fa-solid fa-clock"></i>10 روز</span>
+                <span> <i class="fa-solid fa-user"></i>12+</span>
+                <span><i class="fa-solid fa-location-dot"></i>مالدیو</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg-img img-3">
+            <img src="assets/images/destitation/destination-3.jpg" alt="" />
+
+            <div class="img-content">
+              <h2>تور آلمان</h2>
+              <div class="hidden-content">
+                <span> <i class="fa-solid fa-clock"></i>10 روز</span>
+                <span> <i class="fa-solid fa-user"></i>12+</span>
+                <span><i class="fa-solid fa-location-dot"></i>آلمان</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg-img img-4">
+            <img src="assets/images/destitation/destination-1.jpg" alt="" />
+
+            <div class="img-content">
+              <h2>تور ایتالیا</h2>
+              <div class="hidden-content">
+                <span> <i class="fa-solid fa-clock"></i>10 روز</span>
+                <span> <i class="fa-solid fa-user"></i>12+</span>
+                <span><i class="fa-solid fa-location-dot"></i>ایتالیا</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- #################### end of destination #################### -->
+    <!-- #################### blog #################### -->
+    <section id="blog">
+      <div class="blog-heading">
+        <h3>بلاگ</h3>
+        <h2>جدیدترین بلاگ ها</h2>
+      </div>
+      <div class="blog-container">
+        <article class="blog-art">
+          <div class="blog-img">
+            <img src="assets/images/blog/blog1.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-info">
+              <h3>تورها و سفرها</h3>
+              <small class="admin">
+                <i class="fa-solid fa-user"></i> مدیر سایت</small
+              >
+              <small class="see"><i class="fa-solid fa-eye"></i>12</small>
+              <small><i class="fa-solid fa-comments"></i>(12)</small>
+            </div>
+            <p class="blog-desc">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است
+            </p>
+            <div class="blog-readMore">
+              <a href="#">بیشتر</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-art">
+          <div class="blog-img">
+            <img src="assets/images/blog/blog2.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-info">
+              <h3>تورها و سفرها</h3>
+              <small class="admin">
+                <i class="fa-solid fa-user"></i> مدیر سایت</small
+              >
+              <small class="see"><i class="fa-solid fa-eye"></i>12</small>
+              <small><i class="fa-solid fa-comments"></i>(12)</small>
+            </div>
+            <p class="blog-desc">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است
+            </p>
+            <div class="blog-readMore">
+              <a href="#">بیشتر</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-art">
+          <div class="blog-img">
+            <img src="assets/images/blog/blog3.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-info">
+              <h3>تورها و سفرها</h3>
+              <small class="admin">
+                <i class="fa-solid fa-user"></i> مدیر سایت</small
+              >
+              <small class="see"><i class="fa-solid fa-eye"></i>12</small>
+              <small><i class="fa-solid fa-comments"></i>(12)</small>
+            </div>
+            <p class="blog-desc">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است
+            </p>
+            <div class="blog-readMore">
+              <a href="#">بیشتر</a>
+            </div>
+          </div>
+        </article>
+        <article class="blog-art">
+          <div class="blog-img">
+            <img src="assets/images/blog/blog4.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="blog-info">
+              <h3>تورها و سفرها</h3>
+              <small class="admin">
+                <i class="fa-solid fa-user"></i> مدیر سایت</small
+              >
+              <small class="see"><i class="fa-solid fa-eye"></i>12</small>
+              <small><i class="fa-solid fa-comments"></i>(12)</small>
+            </div>
+            <p class="blog-desc">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است
+            </p>
+            <div class="blog-readMore">
+              <a href="#">بیشتر</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- #################### end of blog #################### -->
+    <!-- #################### contact us #################### -->
+    <section id="contact-us">
+      <div class="contact-container">
+       
+        <form action="mailto:your_email@example.com" method="post" class="contact-form">
+          <label for="name">نام:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">ایمیل:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="message">پیام:</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          ><br />
+          <input type="submit" value="ارسال" class="button"/>
+        </form>
+      </div>
+    </section>
+    <!-- #################### end of contact us #################### -->
+
+    <!-- #################### footer #################### -->
+    <footer>
+      <div class="footer-container">
+        <ul class="footer-link">
+          <h3>لینک ها</h3>
+          <li>
+            <i class="fa-solid fa-chevron-left"></i><a href="#">صفحه اصلی</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-chevron-left"></i><a href="#">درباره ما </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-chevron-left"></i><a href="#">بسته ها </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-chevron-left"></i><a href="#">مقاصد </a>
+          </li>
+          <li><i class="fa-solid fa-chevron-left"></i><a href="#">بلاگ </a></li>
+          <li>
+            <i class="fa-solid fa-chevron-left"></i><a href="#">تماس با ما </a>
+          </li>
+        </ul>
+        <ul class="footer-link">
+          <h3>تماس با ما</h3>
+          <li>
+            <i class="fa-solid fa-location-dot"></i
+            ><a href="#">تهران- خیابان- کوچه- پلاک </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone-flip"></i><a href="#">021-2220011 </a>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone-flip"></i
+            ><a href="#">youremail@email.com </a>
+          </li>
+          <ul class="footer-social">
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </ul>
+
+        <div class="footer-gallery">
+          <h3>گالری تصاویر</h3>
+          <div class="footer-images">
+            <img src="assets/images/blog/blog1.jpg" alt="" />
+            <img src="assets/images/blog/blog2.jpg" alt="" />
+            <img src="assets/images/blog/blog3.jpg" alt="" />
+            <img src="assets/images/blog/blog4.jpg" alt="" />
+            <img src="assets/images/blog/blog5.jpg" alt="" />
+            <img src="assets/images/blog/blog6.jpg" alt="" />
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h3>خبرنامه</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است
+          </p>
+          <form action="#">
+            <input type="text" placeholder="ایمیل خود را وارد کنید" />
+            <button type="submit">ارسال</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- #################### end of footer #################### -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main JS -->
+    <script src="static/js/lib/jquery-3.2.1.min.js"></script>
+    <script src="static/js/lib/persian-date.min.js"></script>
+    <script src="static/js/lib/persian-datepicker.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
